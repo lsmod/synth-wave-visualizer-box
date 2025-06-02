@@ -4,7 +4,6 @@ import VolumeVisualizer from '../components/VolumeVisualizer';
 import StopButton from '../components/StopButton';
 import SettingsButton from '../components/SettingsButton';
 import ProfileButtons from '../components/ProfileButtons';
-import ElapsedTime from '../components/ElapsedTime';
 
 const Index = () => {
   return (
@@ -14,10 +13,7 @@ const Index = () => {
       </div>
       
       <div className="main-controls">
-        <div className="volume-section">
-          <VolumeVisualizer />
-          <ElapsedTime />
-        </div>
+        <VolumeVisualizer />
         <StopButton />
       </div>
       
