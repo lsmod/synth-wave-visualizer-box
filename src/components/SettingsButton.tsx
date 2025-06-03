@@ -27,7 +27,7 @@ const SettingsButton: React.FC = () => {
         <Tooltip>
           <TooltipTrigger asChild>
             <button 
-              className="p-2 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer"
+              className="settings-button"
               onClick={handleClick}
             >
               <Settings size={16} />
@@ -38,7 +38,7 @@ const SettingsButton: React.FC = () => {
           </TooltipContent>
         </Tooltip>
       </SheetTrigger>
-      <SheetContent side="right" className="w-96 overflow-y-auto">
+      <SheetContent side="right" className="settings-sheet">
         <SettingsSheet onClose={() => setIsOpen(false)} />
       </SheetContent>
     </Sheet>
